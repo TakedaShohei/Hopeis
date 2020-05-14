@@ -283,4 +283,5 @@
 /define:ENABLE_TIMELINE
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-Assets\Resources\Scripts\NewBehaviourScript.cs
+Assets\Resources\Scripts\FlowingCamera.cs
+Assets\Resources\Scripts\MakeDungeon.cs
