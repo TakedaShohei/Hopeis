@@ -66620,7 +66620,7 @@ GameObject:
   - component: {fileID: 8241208163094990490}
   - component: {fileID: 8241208163094990489}
   m_Layer: 0
-  m_Name: MakeDungeon
+  m_Name: EasyDungeon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -6,6 +6,7 @@ public class ItemManager : MonoBehaviour
 
     public void GetItem()
     {
+      
         Destroy(this.gameObject);
     }
     // Use this for initialization
