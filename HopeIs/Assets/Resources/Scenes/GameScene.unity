@@ -255,12 +255,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa587b98dbfeb44bad754416e89eb22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  max: 5
+  max: 21
   wall: {fileID: 4184075708924737646, guid: 6a3a31d5c7c5e254eb26e15c4f1745d2, type: 3}
   floor: {fileID: 3044019360999814927, guid: 9c021e9e22b3cb04f942a14572e5844d, type: 3}
   start: {fileID: 7551281489635934297, guid: 0d18eebdfbdb096479eda6bc34c9c429, type: 3}
   goal: {fileID: 177143306796926518, guid: 813d7b7de68e69041bc430c9dd6756fe, type: 3}
-  hope_: {fileID: 0}
 --- !u!65 &484483698
 BoxCollider:
   m_ObjectHideFlags: 0
