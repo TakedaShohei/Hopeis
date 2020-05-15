@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa587b98dbfeb44bad754416e89eb22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  max: 5
+  max: 21
   wall: {fileID: 4184075708924737646, guid: 6a3a31d5c7c5e254eb26e15c4f1745d2, type: 3}
   floor: {fileID: 3044019360999814927, guid: 9c021e9e22b3cb04f942a14572e5844d, type: 3}
   start: {fileID: 7551281489635934297, guid: 0d18eebdfbdb096479eda6bc34c9c429, type: 3}
@@ -269,7 +269,7 @@ BoxCollider:
   m_GameObject: {fileID: 484483695}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -323,8 +323,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  far clip plane: 500
+  field of view: 21.6
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -349,10 +349,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930101321}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 10, y: 70, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}

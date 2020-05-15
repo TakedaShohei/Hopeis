@@ -11,6 +11,7 @@ public class MakeDungeon : MonoBehaviour
     public GameObject floor;   //床用オブジェクト
     public GameObject start;   //スタート地点に配置するオブジェクト
     public GameObject goal;    //ゴール地点に配置するオブジェクト
+    public GameObject hope_:
 
     // 内部パラメータ
     private enum CellType { Wall, Path };   //セルの種類
@@ -18,6 +19,8 @@ public class MakeDungeon : MonoBehaviour
 
     private Vector2Int startPos;    //スタートの座標
     private Vector2Int goalPos;     //ゴールの座標
+
+    private Vector2Int hope_pos_;
 
 
     private void Start()
@@ -27,13 +30,14 @@ public class MakeDungeon : MonoBehaviour
 
         //スタート地点の取得
         startPos = GetStartPosition();
+        
 
         //通路の生成
         //初回はゴール地点を設定する
         goalPos = MakeMapInfo(startPos);
-
+       // hope_pos_ = MakeMapInfo(startPos);
         //通路生成を繰り返して袋小路を減らす
-        var tmpStart = goalPos;
+        Vector2Int tmpStart = goalPos;
         for (int i = 0; i < max * 5; i++)
         {
             MakeMapInfo(tmpStart);
@@ -69,6 +73,8 @@ public class MakeDungeon : MonoBehaviour
 
         return new Vector2Int(randomX, randomY);
     }
+
+    
 
 
     // マップ生成
