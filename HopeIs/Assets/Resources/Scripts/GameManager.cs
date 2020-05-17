@@ -15,10 +15,12 @@ public enum GameState
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance_;
-
+    PlayerManager player_manager_ = null;
     // 現在の状態
     private GameState currentGameState;
-
+    public GameObject[] object_ =new GameObject[3];
+    public GameObject[] object_count_ = GameObject.FindGameObjectsWithTag("item");
+    public int count_=0;
 
     // Use this for initialization
     void Start()
@@ -29,6 +31,17 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+    }
+
+    void Setup()
+    {
+        if (count_ > 2)
+        {
+
+        }
 
     }
+
+
 }

@@ -1,13 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ItemManager : MonoBehaviour
+public class ItemManager : GameManager
 {
-
+    [SerializeField] GameObject item_ = null;
     public void GetItem()
     {
-      
-        Destroy(this.gameObject);
+        count_++;
+        
+        Debug.Log(count_);
+        //Debug.Log();
+        item_.SetActive(false);
+
+       
     }
     // Use this for initialization
     void Start()
