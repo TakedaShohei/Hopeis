@@ -25,25 +25,33 @@ public class GameManager : MonoBehaviour
     public int ItemCount
     {
         get { return item_count_; }
-        protected set { item_count_ = value; }
+        set { item_count_ = value; }
     }
+
+    GoalManager goal_manager_ = null;
+    public GoalManager GoalManager
+    {
+        get { return goal_manager_; }
+        set { goal_manager_ = value; }
+    }
+
 
     List<GameObject> item_list_ = new List<GameObject>();
 
-    
-   
+    public int count_=0;
+
     //public GameObject[] object_count_=null;
-    [SerializeField] GameObject goal_transform_ = null;
     
 
-    
+
+
 
 
     // Use this for initialization
     void Start()
     {
-       
-       
+        
+        Setup();
 
     }
 
@@ -52,22 +60,34 @@ public class GameManager : MonoBehaviour
     {
         
         
-            goal_transform_.SetActive(true);
+       //  goal_manager_.GoalTransform.SetActive(true);
         
     }
 
-    void Setup()
+    public void Setup()
     {
         current_state_ = GameState.Start;
-        item_count_ = item_list_.Count();
-        goal_transform_.SetActive(false);
+        
+        
        
     }
 
     public void AddItem(GameObject item_)
     {
+        item_count_ = item_list_.Count();
+        item_list_.Add(item_);
+        
+        foreach(GameObject item_count_s in item_list_)
+        {
+            Debug.Log(item_count_s);
+            
+        }
+        Debug.Log(item_count_);
+
+
 
     }
+    
 
 
 }
