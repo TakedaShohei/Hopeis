@@ -256,3 +256,12 @@ D:\Users\Github\Unity\ProjectHope\HopeIs\obj\Debug\Assembly-CSharp.csproj.CoreCo
 D:\Users\Github\Unity\ProjectHope\HopeIs\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\Users\Github\Unity\ProjectHope\HopeIs\obj\Debug\Assembly-CSharp.dll
 D:\Users\Github\Unity\ProjectHope\HopeIs\obj\Debug\Assembly-CSharp.pdb
+D:\Users\Github\Unity\ProjectHope\HopeIs\Temp\bin\Debug\Unity.Timeline.Editor.pdb
+D:\Users\Github\Unity\ProjectHope\HopeIs\Temp\bin\Debug\Unity.VSCode.Editor.pdb
+D:\Users\Github\Unity\ProjectHope\HopeIs\Temp\bin\Debug\Unity.TextMeshPro.Editor.pdb
+D:\Users\Github\Unity\ProjectHope\HopeIs\Temp\bin\Debug\UnityEngine.UI.pdb
+D:\Users\Github\Unity\ProjectHope\HopeIs\Temp\bin\Debug\Unity.Timeline.pdb
+D:\Users\Github\Unity\ProjectHope\HopeIs\Temp\bin\Debug\Unity.CollabProxy.Editor.pdb
+D:\Users\Github\Unity\ProjectHope\HopeIs\Temp\bin\Debug\Unity.Rider.Editor.pdb
+D:\Users\Github\Unity\ProjectHope\HopeIs\Temp\bin\Debug\Unity.TextMeshPro.pdb
+D:\Users\Github\Unity\ProjectHope\HopeIs\Temp\bin\Debug\UnityEditor.UI.pdb

@@ -21,28 +21,55 @@ public class GameManager : MonoBehaviour
         set { current_state_ = value; }
     }
 
-    [SerializeField] private int item_count_;
+    [SerializeField] int item_count_;
     public int ItemCount
     {
         get { return item_count_; }
         set { item_count_ = value; }
     }
-
+    [SerializeField] GameObject goal_go_=null;
     GoalManager goal_manager_ = null;
-    public GoalManager GoalManager
-    {
-        get { return goal_manager_; }
-        set { goal_manager_ = value; }
-    }
+   
 
+    
+  
 
     List<GameObject> item_list_ = new List<GameObject>();
+    
 
     public int count_=0;
 
     //public GameObject[] object_count_=null;
-    
+    public void AddItem(GameObject item_)
+    {
+        item_count_++;
+        item_list_.Add(item_);
+        int list_count_ = item_list_.Count();
+        Debug.Log(list_count_);
+        if (list_count_ >= 2)
+        {
+            ImplementGoal();
+            
+        }
+        /* foreach(GameObject item_count_s in item_list_)
+          {
+              Debug.Log(item_count_s);
 
+          }
+          */
+
+
+
+    }
+    public void ImplementGoal()
+    {
+        
+        current_state_ = GameState.End;
+        
+       
+        goal_go_.gameObject.SetActive(true);
+        
+    }
 
 
 
@@ -50,43 +77,28 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
         Setup();
-
+        
     }
 
     // Update is called once per frame
-    void Update()
+   public void Update()
     {
-        
-        
-       //  goal_manager_.GoalTransform.SetActive(true);
-        
-    }
-
-    public void Setup()
-    {
-        current_state_ = GameState.Start;
-        
         
        
+       
+
     }
 
-    public void AddItem(GameObject item_)
+     void Setup()
     {
-        item_count_ = item_list_.Count();
-        item_list_.Add(item_);
-        
-        foreach(GameObject item_count_s in item_list_)
-        {
-            Debug.Log(item_count_s);
-            
-        }
-        Debug.Log(item_count_);
-
-
+        current_state_ = GameState.Start;
+        goal_manager_ = goal_go_.GetComponent<GoalManager>();
+       
 
     }
+
+  
     
 
 

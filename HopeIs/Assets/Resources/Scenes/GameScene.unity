@@ -384,6 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc9822051dd8a7448cc71db500bafe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  game_manager_go: {fileID: 0}
 --- !u!54 &609336623
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -612,6 +613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc9822051dd8a7448cc71db500bafe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  game_manager_go: {fileID: 0}
 --- !u!54 &1251278687
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -628,6 +630,52 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1626486625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1626486627}
+  - component: {fileID: 1626486626}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1626486626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626486625}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d244fe0c51e65748818b00490fdb138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_count_: 0
+  goal_go_: {fileID: 1964699052}
+  count_: 0
+--- !u!4 &1626486627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626486625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.953689, y: 2.3935099, z: 13.816191}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1824562845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -639,6 +687,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: easyDungeon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607519938716747926, guid: 620ba44d05ae8924684d5a58b2b5366d,
+        type: 3}
+      propertyPath: m_Name
+      value: Chara
       objectReference: {fileID: 0}
     - target: {fileID: 8241208163094990491, guid: 620ba44d05ae8924684d5a58b2b5366d,
         type: 3}
@@ -705,11 +758,6 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3607519938716747926, guid: 620ba44d05ae8924684d5a58b2b5366d,
-        type: 3}
-      propertyPath: m_Name
-      value: Chara
-      objectReference: {fileID: 0}
     - target: {fileID: 7074168936956258962, guid: 620ba44d05ae8924684d5a58b2b5366d,
         type: 3}
       propertyPath: m_DynamicOccludee
@@ -725,7 +773,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clear
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8241208163094990490, guid: 620ba44d05ae8924684d5a58b2b5366d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 620ba44d05ae8924684d5a58b2b5366d, type: 3}
 --- !u!1 &1964699052
 GameObject:
@@ -739,6 +788,7 @@ GameObject:
   - component: {fileID: 1964699055}
   - component: {fileID: 1964699054}
   - component: {fileID: 1964699053}
+  - component: {fileID: 1964699057}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Goal
@@ -820,6 +870,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1964699057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964699052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec964b01116046b469656c438767f185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goal_go_: {fileID: 1964699052}
 --- !u!1 &1981657983
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,6 +1020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc9822051dd8a7448cc71db500bafe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  game_manager_go: {fileID: 1626486625}
 --- !u!1001 &3893596942242490875
 PrefabInstance:
   m_ObjectHideFlags: 0
