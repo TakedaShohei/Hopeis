@@ -65,7 +65,6 @@ public class GameManager : MonoBehaviour
     {
         
         current_state_ = GameState.End;
-        
        
         goal_go_.gameObject.SetActive(true);
         
